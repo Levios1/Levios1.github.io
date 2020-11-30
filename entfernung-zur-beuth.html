@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="basic.css">
+        <link rel="stylesheet" href="entfernung-zur-beuth.css">
+        <title>Entfernung zur Beuth Hochschule</title>
+        <script src="basic.js"></script>   
+        <script src="https://maps.googleapis.com/maps/api/js" defer></script>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="spiele.html">Spiele</a>
+            <a href="veranstaltungen.html">Veranstaltungen</a>
+            <a href="entfernung-zur-beuth.html">Entfernung zur Beuth</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="nav">
+            <div class="nav-inner">
+                <div class="nav-bild"><a href="home.html"><img src="bilder/Logo.jpg" alt="Vereinslogo" height="32 px"></a></div>
+                <div class="links">
+                    <a id="home" href="home.html">Home</a>
+                    <a id="spiele" href="spiele.html">Spiele</a>
+                    <a id="veranstaltungen" href="veranstaltungen.html">Veranstaltungen</a>
+                    <a id="entfernung" href="entfernung-zur-beuth.html">Entfernung <br> zur Beuth</a>
+                    <a id="kontakt" style="margin-right: 0px;" href="kontakt.html">Kontakt</a>
+                </div>
+                <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+
+        <p id="text">fdfd</p>
+        <br>
+        <div id="mapholder" style="width: 100%; height: auto;"></div>
+        <script>
+            /*Code orientiert an https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation*/
+            var x = document.getElementById("text");
+            if (navigator.geolocation) 
+            {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } 
+            else 
+            { 
+                x.innerHTML = "Geolocation wird von diesem Browser nicht unterstützt.";
+            }
+            function showPosition(position) 
+            {
+                x.innerHTML = "Ihr Breitengrad: " + position.coords.latitude + 
+                ", Ihr L&auml;ngengrad: " + position.coords.longitude +" (auf "+ position.coords.accuracy+" m genau)"+
+                "<br>Entfernung zur Beuth Hochschule: ";
+
+                var mapProp = {
+                    center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                    zoom: 15,
+                };
+                var map = new google.maps.Map(document.getElementById("mapholder"), mapProp);
+                new google.maps.Marker({
+                    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                    map,
+                });
+            }
+        </script>
+    </body>
+</html>

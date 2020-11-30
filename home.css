@@ -1,0 +1,123 @@
+#home {color: #1a81c3;}
+.intro {
+    background-image: url("bilder/titelbild2.jpg"); 
+    background-color: #cccccc; 
+    height: 280px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+.intro-text 
+{ 
+    text-align: center;
+    color: blue;
+    background-color: white;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30%;
+}
+.intro-text h1 {font-size: 20px;}
+.middle
+{
+  clear: both;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+  padding: 8px;
+
+}
+.middle-block
+{
+  width: 40%;
+  float: left;
+  height: auto;
+  margin-top: 20px;
+  font-size: 3vw;
+  font-family: sans-serif;
+  position: relative;
+}
+.middle img
+{
+  position: absolute;
+  top:30px;
+  border-radius: 40px;
+}
+.trennblock
+{
+  width: 100%;
+  height: 24px;
+  border-bottom-style: outset;
+  clear: both;
+}
+.probe
+{
+  height: auto;
+  background-color: lightgreen;
+  clear: both;
+  margin-top: 8px;
+  text-align: center;
+  border-radius: 40px;
+  padding:8px;
+}
+.media
+{
+  height: auto;
+  clear: both;
+  text-align: center;
+  background-color: #1a81c3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.media img
+{
+  margin-right: 11%;
+}
+.media h1{font-size: 20px;color: white;}
+.media-buttons
+{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+body
+{ 
+  background-image: url("bilder/grass_normal.jpg");
+  margin: 0;
+}
+@media only screen and (max-width: 400px) 
+{
+  .media-buttons{width: 100%;}
+}
+@media only screen and (min-width: 1000px) 
+{
+  .intro{height: 500px;}
+  .intro-text {width: 500px;}
+  .intro-text h1 {font-size: 35px;}
+  .middle
+  {
+    width: 80%;
+    margin:0 auto;
+    border-radius: 100px;
+  }
+  .middle-block
+  {
+    font-size: 1.8vw;
+    padding-left: 1vw;
+  }
+  .middle img{position: unset;}
+  .probe
+  {
+    margin-bottom: 40px;
+    font-size: 2em;
+  }
+  .media h1{font-size: 40px;color: white;}
+
+}

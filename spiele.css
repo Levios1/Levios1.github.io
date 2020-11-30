@@ -1,0 +1,72 @@
+#spiele {color: #1a81c3;}
+.spiel 
+{   
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto; /*44*/
+    background-color: white;
+    box-sizing: border-box;
+    position: relative;
+    border-style: outset;
+    margin-bottom: 8px;
+    padding:1%;
+}
+body{background-image: url("bilder/tennis.jpg"); margin: 0;}
+.spiel p    
+{
+    float: left;
+    font-size: 3.75vw;
+    z-index:1;
+}
+[class*="spiel-"] 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    float: left;
+}
+.bild
+{
+    width: 13.5%; /*8*/
+    float: left;
+    z-index:0;
+    box-sizing: border-box;
+    height: auto;
+    
+}
+.bild img{width: 100%;height: 100%;}
+.spiel-name
+{
+    width: 24.5%; /*30*/
+    
+}
+.spiel-score
+{
+    width: 8%;
+}
+.spiel-middle
+{
+    width: 2%;
+}
+@media only screen and (max-width: 360px) 
+{
+    .bild
+    {
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 600px) 
+{
+    .spiel
+    {
+
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 1000px) 
+{
+  .spiel{width: 80%;}
+  .spiel p{font-size: 3vw;}
+}
