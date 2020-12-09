@@ -1,0 +1,60 @@
+#kontakt {color: #1a81c3;}
+body
+{ 
+  margin: 0;
+}
+.main
+{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.main h4{font-size: 4vw;}
+.main h2{font-size: 5vw;}
+.main p{font-size: 4vw;}
+.label
+{
+    margin-top: 10px;
+    width: 100%;
+}
+.input
+{
+    margin-top: 10px;
+    width: 100%;
+}
+#success
+{
+    color: green;
+    font-size: 5vw;
+}
+.oeffnungszeiten {
+    width: 80vw;
+    padding: 4vw;
+    border: 2px solid gray;
+    margin:0 auto;
+ }
+ .oeffnungszeiten p {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 0;
+    font-weight:bold;
+    font-size: 4vw;
+ }
+ .map
+ {
+    width: 80vw;
+    height: 300px;
+    margin:20px auto;
+ }
+
+ .form
+ {
+    border-style: solid;
+    padding: 10vw 0;
+ }
+ input[type=text], input[type=tel], input[type=email], textarea
+ {
+    width: 80%;
+ }

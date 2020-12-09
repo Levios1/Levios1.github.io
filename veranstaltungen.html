@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="basic.css">
-        <link rel="stylesheet" href="veranstaltungen.css">
-        <title>Veranstaltungen</title>
-        <script src="basic.js"></script>
-        <script src="read.js"></script>
-    </head>
-    <body>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="home.html">Home</a>
-            <a href="spiele.html">Spiele</a>
-            <a href="veranstaltungen.html">Veranstaltungen</a>
-            <a href="entfernung-zur-beuth.html">Entfernung zur Beuth</a>
-            <a href="kontakt.html">Kontakt</a>
-        </div>
-        <div class="nav">
-            <div class="nav-inner">
-                <div class="nav-bild"><a href="home.html"><img src="bilder/Logo.jpg" alt="Vereinslogo" height="32 px"></a></div>
-                <div class="links">
-                    <a id="home" href="home.html">Home</a>
-                    <a id="spiele" href="spiele.html">Spiele</a>
-                    <a id="veranstaltungen" href="veranstaltungen.html">Veranstaltungen</a>
-                    <a id="entfernung" href="entfernung-zur-beuth.html">Entfernung <br> zur Beuth</a>
-                    <a id="kontakt" style="margin-right: 0px;" href="kontakt.html">Kontakt</a>
-                </div>
-                <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="veranstaltungen.css">
+    <title>Veranstaltungen</title>
+    <script src="basic.js"></script>
+    <script src="read.js"></script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="spiele.html">Spiele</a>
+        <a href="veranstaltungen.html">Veranstaltungen</a>
+        <a href="entfernung-zur-beuth.html">Entfernung zur Beuth</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="nav">
+        <div class="nav-inner">
+            <div class="nav-bild"><a href="index.html"><img src="bilder/Logo.jpg" alt="Vereinslogo" height="32 px"></a>
             </div>
-        </div>
-        <br>
-        <div class="placeholder"></div>
-        <div class="event">
-            <div class="event-img">
-                <img src="bilder/fire.jpg" alt="Feuer" width="100%" height="100%">
+            <div class="links">
+                <a id="home" href="index.html">Home</a>
+                <a id="spiele" href="spiele.html">Spiele</a>
+                <a id="veranstaltungen" href="veranstaltungen.html">Veranstaltungen</a>
+                <a id="entfernung" href="entfernung-zur-beuth.html">Entfernung <br> zur Beuth</a>
+                <a id="kontakt" style="margin-right: 0px;" href="kontakt.html">Kontakt</a>
             </div>
-            <div class="event-text">
-                <h1><u>27.10.2020 18Uhr</u></h1>
-                <h2>Herbstfeuer</h1>
+            <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+    </div>
+    <br>
+    <div class="placeholder"></div>
+    <div class="event">
+        <div class="event-img">
+            <img src="bilder/fire.jpg" alt="Feuer" width="100%" height="100%">
+        </div>
+        <div class="event-text">
+            <h1><u>27.10.2020 18Uhr</u></h1>
+            <h2>Herbstfeuer</h1>
                 <button onclick="read(1)" id="readBtn-1">Mehr Anzeigen</button>
-            </div>
-            <p><span  id="more-1" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</span></p>
-            <div style="clear: both;"></div>
         </div>
-        <div class="event">
-            <div class="event-img">
-                <img src="bilder/fire.jpg" alt="Feuer" width="100%" height="100%">
-            </div>
-            <div class="event-text">
-                <h1><u>27.10.2020 18Uhr</u></h1>
-                <h2>Herbstfeuer</h1>
+        <p><span id="more-1" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</span></p>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="event">
+        <div class="event-img">
+            <img src="bilder/fire.jpg" alt="Feuer" width="100%" height="100%">
+        </div>
+        <div class="event-text">
+            <h1><u>27.10.2020 18Uhr</u></h1>
+            <h2>Herbstfeuer</h1>
                 <button onclick="read(2)" id="readBtn-2">Mehr Anzeigen</button>
-            </div>
-            <p><span  id="more-2" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</span></p>
-            <div style="clear: both;"></div>
         </div>
-    </body>
+        <p><span id="more-2" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</span></p>
+        <div style="clear: both;"></div>
+    </div>
+</body>
+
 </html>
