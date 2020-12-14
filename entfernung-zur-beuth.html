@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,7 +69,7 @@
         function showPosition(position) {
             entfernung = getDistanceFromLatLonInKm(position.coords.latitude, position.coords.longitude, 52.5453248657241, 13.351606564227)
             x.innerHTML = "Ihr Breitengrad: " + position.coords.latitude +
-                ", Ihr L&auml;ngengrad: " + position.coords.longitude + " (auf " + position.coords.accuracy + " m genau)" +
+                ", Ihr L&auml;ngengrad: " + position.coords.longitude + " (auf " + parseInt(position.coords.accuracy) + " m genau)" +
                 "<br>Entfernung zur Beuth Hochschule: " + entfernung + "km";
 
             var mapProp = {
