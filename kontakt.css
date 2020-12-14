@@ -18,11 +18,19 @@ body
 {
     margin-top: 10px;
     width: 100%;
+    font-size: 4vw;
 }
 .input
 {
     margin-top: 10px;
     width: 100%;
+    font-size: 4vw;
+}
+input{
+    font-size: 4vw;
+}
+textarea{
+    font-size: 4vw;
 }
 #success
 {
@@ -40,7 +48,6 @@ body
     justify-content: space-between;
     margin: 1vw 0;
     font-weight:bold;
-    font-size: 4vw;
  }
  .map
  {
@@ -57,4 +64,49 @@ body
  input[type=text], input[type=tel], input[type=email], textarea
  {
     width: 80%;
+ }
+ .placeholder-2{
+     clear: both;
+     width: 100%;
+ }
+ @media only screen and (min-width: 1000px) 
+ {
+     .main
+     {
+        width: 60%;
+        margin: 0 auto;
+
+     }
+    .main h4{font-size: 2.4vw;}
+    .main h2{font-size: 3vw;}
+    .main p{font-size: 2.4vw;}
+    .map
+    {
+       width: 48vw;
+       height: 500px;
+    }
+    .oeffnungszeiten {
+        width: 48vw;
+        padding: 2.4vw;
+     }
+     .oeffnungszeiten p {
+        margin: 0.6vw 0;
+     }
+     .form
+    {
+        padding: 6vw 0;
+    }
+    .label{
+        font-size: 2.4vw;
+        width: 30%;
+        float: left;
+    }
+    .input{
+        width: 70%;
+        float: left;
+    }
+    input{
+        font-size: 2.4vw;
+    }
+    body{background-image: url("bilder/wood.jpg");}
  }
