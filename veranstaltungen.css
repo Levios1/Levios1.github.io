@@ -8,7 +8,6 @@ body {
     width: 100%;
     height: auto;
     padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 4px;
     padding-left: 4px;
     margin-bottom: 12px;
@@ -18,8 +17,8 @@ body {
     border: outset;
     margin-top: 8px;
 }
-.event h1 {font-size: 2.8vw;}
-.event h2 {font-size: 2.4vw;}
+.event h1 {font-size: 4.8vw;}
+.event h2 {font-size: 4.4vw;}
 .event img{float: left;}
 .event-img
 {
@@ -30,14 +29,14 @@ body {
 .event p
 {
     float: left;
-    font-size: 2.4vw;
+    font-size: 4.4vw;
     text-align: left;
 }
 .event button 
 {
     width: auto;
     height: auto;
-    font-size: 2vw;
+    font-size: 4vw;
     position: relative;
     left: 3px;
     border-radius: 5px;
@@ -46,12 +45,13 @@ body {
     border-width: 1px;
     cursor: pointer;
     background-color: #f1f1f1;
-    padding:0vw 2vw;
+    padding:0vw 4vw;
     box-sizing: border-box;
 }
 .event-text
 {
-    padding-top: 3vw;
+    position: relative;
+    bottom: 5px;
 }
 @media only screen and (min-width: 1000px) 
 {
@@ -60,10 +60,10 @@ body {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+        padding-bottom: 20px;
     }
     .event p
     {
-
         font-size: 1.92vw;
     }
     .event button 
@@ -73,4 +73,9 @@ body {
     }
     .event h1 {font-size: 2.24vw;}
     .event h2 {font-size: 1.92vw;}
+    .event-text
+{   
+    bottom: 0px;
+    top: 30px;
+}
 }
