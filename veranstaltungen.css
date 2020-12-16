@@ -2,6 +2,7 @@
 body {
     background-image: url("bilder/vorhang.png");
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 .event 
 {
@@ -23,7 +24,7 @@ body {
 .event-img
 {
     width: 40%;
-    height: auto;
+    height: 30vw;
     float: left;
 }
 .event p
@@ -74,8 +75,9 @@ body {
     .event h1 {font-size: 2.24vw;}
     .event h2 {font-size: 1.92vw;}
     .event-text
-{   
+    {   
     bottom: 0px;
     top: 30px;
-}
+    }
+    .event-img{height: 24vw;}
 }
