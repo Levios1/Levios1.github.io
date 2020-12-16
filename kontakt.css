@@ -2,6 +2,7 @@
 body
 { 
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 .main
 {
@@ -59,7 +60,8 @@ textarea{
  .form
  {
     border-style: solid;
-    padding: 10vw 0;
+    padding: 2vw 0 10vw 0;
+    box-sizing: border-box;
  }
  input[type=text], input[type=tel], input[type=email], textarea
  {
