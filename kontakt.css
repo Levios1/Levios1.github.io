@@ -60,7 +60,7 @@ textarea{
  .form
  {
     border-style: solid;
-    padding: 2vw 0 10vw 0;
+    padding: 2vw 2vw 10vw 2vw;
     box-sizing: border-box;
  }
  input[type=text], input[type=tel], input[type=email], textarea
