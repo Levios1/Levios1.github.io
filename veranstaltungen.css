@@ -8,10 +8,7 @@ body {
 {
     width: 100%;
     height: auto;
-    padding-top: 20px;
-    padding-right: 4px;
-    padding-left: 4px;
-    margin-bottom: 12px;
+    padding: 1.3vw;
     background-color: white;
     box-sizing: border-box;
     text-align: center;
@@ -33,6 +30,7 @@ body {
     font-size: 4.4vw;
     text-align: left;
     text-align: justify;
+    margin-bottom: 0;
 }
 .event button 
 {
