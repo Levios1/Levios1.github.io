@@ -1,6 +1,6 @@
 #home {color: #1a81c3;}
 .intro {
-    background-image: url("bilder/titelbild2.jpg"); 
+    background-image: url("bilder/titelbild.jpg"); 
     background-color: #cccccc; 
     height: 280px; 
     background-position: center; 
@@ -9,6 +9,7 @@
     position: relative;
     width: 100%;
     float: left;
+    border-bottom-style: outset;
   }
 .intro-text 
 { 
@@ -31,6 +32,33 @@
   box-sizing: border-box;
   position: relative;
   padding: 8px;
+}
+.vorstellung
+{
+  padding:8px;
+  font-size: 3vw;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.bild{
+  margin: 0 auto;
+  width: 80vw;
+  height: 70vw;
+  position: relative;
+}
+.bild img
+{
+  width: 100%;
+  height: 60vw;
+}
+.vorstellung p
+{
+  text-align: justify;
+}
+.vorstellung h1
+{
+  text-align: center;
 }
 .middle-block
 {
@@ -106,7 +134,7 @@ li
 }
 body
 { 
-  background-image: url("bilder/grass_normal.jpg");
+  background-image: url("bilder/grass.jpg");
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -128,6 +156,20 @@ body
   .middle-block
   {
     font-size: 1.8vw;
+  }
+  .vorstellung
+  {
+    font-size: 1.8vw;
+  }
+  .bild{
+    margin: 0 auto;
+    width: 60%;
+    height: 30vw;
+  }
+  .bild img
+  {
+    width: 100%;
+    height: 30vw;
   }
   .middle img{position: unset;}
   .probe
