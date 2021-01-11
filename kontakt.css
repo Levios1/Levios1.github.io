@@ -67,6 +67,7 @@ textarea{
  {
     width: 80%;
  }
+
  .placeholder-2{
      clear: both;
      width: 100%;
@@ -106,6 +107,12 @@ textarea{
     .input{
         width: 70%;
         float: left;
+    }
+    #submit
+    {
+        float: unset;
+        margin: 0 auto;
+    
     }
     input{
         font-size: 2.4vw;
