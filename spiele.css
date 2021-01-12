@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: auto; /*44*/
+    height: auto; 
     background-color: white;
     box-sizing: border-box;
     position: relative;
@@ -34,7 +34,7 @@ body
 }
 .bild
 {
-    width: 13.5%; /*8*/
+    width: 13.5%;
     float: left;
     z-index:0;
     box-sizing: border-box;
@@ -44,7 +44,7 @@ body
 .bild img{width: 100%;height: 100%;}
 .spiel-name
 {
-    width: 24.5%; /*30*/
+    width: 24.5%;
     
 }
 .spiel-score

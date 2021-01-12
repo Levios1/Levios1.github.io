@@ -2,7 +2,7 @@
 .nav 
 {
   width: 100%;
-  height: auto; /*40*/
+  height: auto; 
   border-bottom-style: outset;
   position: fixed;
   top: 0px;
@@ -17,7 +17,6 @@
   width: 8%;
   height: auto;
 }
-/*rgb(26, 129, 195)*/
 .links a
 {
   height: auto;
@@ -65,7 +64,7 @@ body
   z-index: 5;
   top: 0;
   right: 0;
-  background-color: #111; /*white*/
+  background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -75,7 +74,7 @@ body
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181; /* #1a81c3*/
+  color: #818181;
   display: block;
   transition: 0.3s;
 }
